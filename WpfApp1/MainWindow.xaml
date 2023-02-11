@@ -1,0 +1,80 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="İlker" Height="450" Width="800">
+    <!--<Grid>
+        <Button Width="200" Height="200" Click="Button_Click">
+            <Button.Content>
+                <Ellipse Width="200" Height="100" Fill="Aqua"></Ellipse>
+            </Button.Content>
+        </Button>
+    </Grid>-->
+    <!--<StackPanel Orientation="Horizontal">
+        <Button Height="50" Width="100"></Button>
+        <Button Height="80" Width="100"></Button>
+        <Button Height="60" Width="150"></Button>
+    </StackPanel>-->
+
+    <!--<Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="20*"></ColumnDefinition>
+            <ColumnDefinition Width="50*"></ColumnDefinition>
+            <ColumnDefinition Width="30*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="60*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Content="Buton1"></Button>
+        <Button Content="Buton1" Grid.Row="3"></Button>
+        <Button Content="Buton1" Grid.Column="2"></Button>
+        <Button Content="Buton1" Grid.Column="3" Grid.Row="2"></Button>
+    </Grid>-->
+
+    <!--<Canvas>
+        <Button Width="100" Height="100" Content="Buton1" Canvas.Left="200" Canvas.Top="200"></Button>
+        <Button Width="100" Height="100" Content="Buton2"></Button>
+        <Button Width="100" Height="100" Content="Buton3"></Button>
+    </Canvas>-->
+
+    <!--<WrapPanel>
+        <Button Width="100" Height="100" Content="Buton1"></Button>
+        <Button Width="100" Height="100" Content="Buton2"></Button>
+        <Button Width="100" Height="100" Content="Buton3"></Button>
+    </WrapPanel>-->
+
+    <!--<Grid>
+        <Ellipse Width="400" Height="200" Fill="LightGreen">
+            <Ellipse.Effect>
+                -->
+    <!--<DropShadowEffect Direction="255" Opacity="0.5" ></DropShadowEffect>-->
+    <!--
+                <BlurEffect Radius="5"></BlurEffect>
+            </Ellipse.Effect>
+        </Ellipse>
+    </Grid>-->
+
+    <Canvas>
+        <Button Width="100" Height="100" Canvas.Left="550" Canvas.Top="20" 
+                MouseEnter="Button_MouseEnter"
+                MouseLeave="Button_MouseLeave"></Button>
+        <Button Width="100" Height="100" Canvas.Left="350" Canvas.Top="20" 
+                MouseEnter="Button_MouseEnter"
+                MouseLeave="Button_MouseLeave"></Button>
+        
+        <Button Width="100" Height="100" Canvas.Left="150" Canvas.Top="20" 
+                MouseEnter="Button_MouseEnter"
+                MouseLeave="Button_MouseLeave" Click="Button_Click_1"></Button>
+        <Button Width="100" Height="100" Canvas.Left="150" Canvas.Top="200" 
+                MouseEnter="Button_MouseEnter"
+                MouseLeave="Button_MouseLeave" Click="Button_Click_2">Tıkla</Button>
+        
+        <TextBox x:Name="txtMesaj" Height="50" Width="100" Canvas.Left="350" Canvas.Top="261" RenderTransformOrigin="0.589,0.589"></TextBox>
+    </Canvas>
+</Window>
